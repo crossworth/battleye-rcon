@@ -1,15 +1,3 @@
-## BattlEye RCon Server Protocol v2
-
-Implementation of the [RCON protocol](https://www.battleye.com/downloads/BERConProtocol.txt) for servers.
-
-This project implements the server protocol without the `fragmentation/multiple packets` part.
-
-It will handle the client state and brute-force attacks.
-
-You can download an BattlEye RCon client at [https://www.battleye.com/downloads/](https://www.battleye.com/downloads/).
-
-**Example simple UDP server**
-```go
 package main
 
 import (
@@ -36,11 +24,3 @@ func main() {
 		log.Fatal(err)
 	}
 }
-```
-
-
-**Server**
-![Server](/example/server.jpg)
-
-**Client**
-![Client](/example/client.jpg)
